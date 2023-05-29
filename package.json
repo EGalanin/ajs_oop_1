@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
     "lint": "eslint .",
+    "coverage": "jest --coverage",
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production"
   },
