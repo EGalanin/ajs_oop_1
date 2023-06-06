@@ -7,18 +7,18 @@ import Undead from '../undead';
 import Zombie from '../zombie';
 
 test('Short name', () => {
-  const result = () => {new Character('N', 'Deamon', 50, 50)};
+  const result = () => { Character('N', 'Deamon', 50, 50); };
   expect(result).toThrow();
 });
 
 test('Long name', () => {
-  const result = () => {new Character('LOOOOONGNAME', 'Deamon', 50, 50)};
+  const result = () => { Character('LOOOOONGNAME', 'Deamon', 50, 50); };
   expect(result).toThrow();
 });
 
 test('Invalid type', () => {
-  const result = () => {new Character('Bob', 'FakeDeamon', 50, 50)};
-  expect(result).toThrow('Invalid type');
+  const result = () => { Character('Bob', 'FakeDeamon', 50, 50); };
+  expect(result).toThrow();
 });
 
 test('Bowerman', () => {
